@@ -1,11 +1,14 @@
 {
+  "homepage": "https://wafiibrahim.github.io/Portfolio",
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build --git git"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
   },
   "devDependencies": {
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.24",
     "val-loader": "^5.0.0"
