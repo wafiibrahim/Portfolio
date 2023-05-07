@@ -10,36 +10,40 @@ const Frontend = () => {
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>HTML</h4>
+            <h4>HTML, CSS & JavaScript</h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
+
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>CSS</h4>
+            <h4>Java</h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
+
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>JavaScript</h4>
+            <h4>C</h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
+
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>Bootstrap</h4>
+            <h4>MS Office (Word, Excel and Powerpoint)</h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
+
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>React</h4>
-            <small className="text-light">Experienced</small>
+            <h4>Python</h4>
+            <small className="text-light">Intermediate</small>
           </div>
         </article>
       </div>

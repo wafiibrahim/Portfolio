@@ -37,8 +37,8 @@
 
 .experience__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+
+  row-gap: 1rem;
 }
 
 .experience__details {
@@ -64,7 +64,7 @@
     right: 80%;
   }
 
-  .experience__contentP {
+  .experience__content {
     padding: 1rem;
   }
 }
@@ -76,9 +76,7 @@
   }
 
   .experience__container > div {
-    width: 80%;
-    padding: 2rem 1rem;
     position: relative;
-    left: 1%;
+    left: 10%;
   }
 }

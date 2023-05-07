@@ -28,8 +28,8 @@ const Experience = () => {
       <br></br>
 
       <div className="container experience__container">
-        <a onClick={handleComponentF}>Frontend Development</a>
-        <a onClick={handleComponent}>Backend Development</a>
+        <a onClick={handleComponentF}>Skills</a>
+        <a onClick={handleComponent}>Work Experience</a>
         {isShownF && <Frontend></Frontend>}
         {isShown && <Backend></Backend>}
 
