@@ -36,9 +36,9 @@
 }
 
 .experience__content {
-  display: grid;
-
-  row-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .experience__details {

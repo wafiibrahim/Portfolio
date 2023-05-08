@@ -10,7 +10,7 @@ const Frontend = () => {
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>HTML, CSS & JavaScript</h4>
+            <h4>HTML & CSS </h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
@@ -26,7 +26,7 @@ const Frontend = () => {
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>C</h4>
+            <h4>Javascript / Javascript Libraries</h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
@@ -34,7 +34,7 @@ const Frontend = () => {
         <article className="experience__details">
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
-            <h4>MS Office (Word, Excel and Powerpoint)</h4>
+            <h4>DOM Manipulation</h4>
             <small className="text-light">Experienced</small>
           </div>
         </article>
@@ -43,6 +43,14 @@ const Frontend = () => {
           <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
           <div>
             <h4>Python</h4>
+            <small className="text-light">Intermediate</small>
+          </div>
+        </article>
+
+        <article className="experience__details">
+          <BsPatchCheckFill className="experience__details-icons"></BsPatchCheckFill>
+          <div>
+            <h4>UX/UI Assessment </h4>
             <small className="text-light">Intermediate</small>
           </div>
         </article>
