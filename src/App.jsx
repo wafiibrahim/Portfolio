@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 
 import "./index.css";
 
@@ -11,14 +11,40 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 
 import Footer from "./Components/Footer/Footer";
 
+
+
 import Nav from "./Components/Nav/Nav";
+
+
+
+import { ThemeContext } from "./../src/Theme";
+
+
+
+
+
 
 //Always check if css-loader and style-loader is installed
 
+
+
 function App() {
+
+  const { theme } = useContext(ThemeContext);
+
+  
+
+  
   return (
     //All other components have to go inside the div in the app
-    <div>
+
+    
+    <div className={`App ${theme}`}> 
+
+      
+
+      
+      
       <Header></Header>
       <Nav></Nav>
       <About></About>

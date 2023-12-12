@@ -1,8 +1,14 @@
-.container.contact__container {
-  width: 58%;
+/*======= Contact Section =======*/
+
+#contact {
+  background-color: var(--color-bg);
+  padding: 4rem 0;
+}
+
+.contact__container {
   display: grid;
-  grid-template-columns: 30% 58%;
-  gap: 12%;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
 
 .contact__options {
@@ -10,31 +16,48 @@
   flex-direction: column;
   gap: 1.2rem;
 }
+
 .contact__option {
   background: var(--color-bg-variant);
-  padding: 1.2rem;
-  border-radius: 1.2rem;
-
+  padding: 1.5rem;
+  border-radius: 1.5rem;
   text-align: center;
-  border: 1px solid transparent;
-
-  transition: var(--transition);
+  box-shadow: 0 4px 8px var(--color-light);
+  transition: transform 0.4s ease;
 }
 
 .contact__option:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+  transform: scale(1.02);
 }
 
 .contact__option-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}
+
+.contact__option h4 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: var(--color-light);
+}
+
+.contact__option h5 {
+  font-size: 0.9rem;
+  color: var(--color-light);
 }
 
 .contact__option a {
-  margin-top: 0.7rem;
+  margin-top: 1rem;
   display: inline-block;
   font-size: 0.8rem;
+  color: var(--color-light);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.contact__option:hover a {
+  color: var(--color-primary-variant);
 }
 
 /*============= FORM  ===============*/
@@ -42,33 +65,96 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
+  padding: 1.8rem;
+  border-radius: 0.8rem;
   background: transparent;
-  border: 1px solid #000000;
-
-  resize: none;
-
-  color: var(--color-white);
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+  transition: border-color 0.4s ease;
 }
 
+input:focus,
+textarea:focus {
+  border-color: var(--color-bg);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+button:hover {
+  background-color: var(--color-primary-variant);
+}
+
+/*======= Responsive =======*/
+
 @media screen and (max-width: 1024px) {
-  .container.contact__container {
+  .contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
-/*=======Phones=======*/
+
+/*======= Phones =======*/
 
 @media screen and (max-width: 600px) {
-  .container.contact__container {
+  .contact__container {
     grid-template-columns: 1fr;
     width: var(--container-width-sm);
   }
+}
+/* ... (unchanged styles) */
+
+/*============= Alert ===============*/
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-light);
+  color: var(--color-bg);
+  padding: 1.5rem;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease; /* Add transition for pop effect */
+  transform: translateY(-100%);
+}
+
+.alert.show {
+  transform: translateY(0); /* Bring the alert to the top of the screen */
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert button {
+  background-color: transparent;
+  color: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.4s ease;
+}
+
+.alert button:hover {
+  color: var(--color-white);
 }

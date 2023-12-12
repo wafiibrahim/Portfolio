@@ -1,39 +1,42 @@
-import React from "react";
+// Experience.js
+import React, { useState } from "react";
 import "./Experience.css";
-
-import { BsPatchCheckFill } from "react-icons/bs";
-
-import Backend from "./Backend";
-import Frontend from "./Frontend";
-import { useState } from "react";
+import Skills from "./Skills";
+import WorkExperience from "./WorkExperience";
 
 const Experience = () => {
-  const [isShown, setIsShown] = useState(false);
-  function handleComponent() {
-    setIsShownF(false);
-    setIsShown((curr) => !curr);
-  }
+  const [showSkills, setShowSkills] = useState(true);
 
-  const [isShownF, setIsShownF] = useState(true);
-  function handleComponentF() {
-    setIsShown(false);
-    setIsShownF((curr) => !curr);
-  }
+  const toggleSkillsView = () => {
+    setShowSkills(true);
+  };
+
+  const toggleWorkExperienceView = () => {
+    setShowSkills(false);
+  };
 
   return (
-    <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
-      <br></br>
-      <br></br>
-
-      <div className="container experience__container">
-        <a onClick={handleComponentF}>Skills</a>
-        <a onClick={handleComponent}>Work Experience</a>
-        {isShownF && <Frontend></Frontend>}
-        {isShown && <Backend></Backend>}
-
-        {!isShown && !isShownF && <Frontend></Frontend>}
+    <section id="experience" className="experience">
+      <div className="container">
+        <h5>What I Bring to the Table</h5>
+        <h2>Experience & Skills</h2>
+        <div className="experience__toggle-container">
+          <div
+            className={`experience__toggle ${showSkills ? "active" : ""}`}
+            onClick={toggleSkillsView}
+          >
+            Skills
+          </div>
+          <div
+            className={`experience__toggle ${showSkills ? "" : "active"}`}
+            onClick={toggleWorkExperienceView}
+          >
+            Work Experience
+          </div>
+        </div>
+        <div className="experience__content">
+          {showSkills ? <Skills /> : <WorkExperience />}
+        </div>
       </div>
     </section>
   );

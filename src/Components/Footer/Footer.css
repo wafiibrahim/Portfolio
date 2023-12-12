@@ -1,28 +1,47 @@
+/* Footer.css */
+
 footer {
-  background: var(--color-primary);
+  background: var(--color-white);
   padding: 3rem 0;
   text-align: center;
-  font-size: 0.9rem;
-  margin-top: 0.7rem;
+  font-size: 1rem;
 }
 
 footer a {
   color: var(--color-bg);
+  text-decoration: none;
 }
 
-.footer_logo {
+.footer__logo {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
+  color: var(--color-light);
 }
 
 .permalinks {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin: 0 auto 3rem;
+}
+
+.permalinks li {
+  margin: 0;
+}
+
+.permalinks a {
+  color: var(--color-light);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.permalinks a:hover {
+  color: var(--color-primary-variant);
 }
 
 .footer__socials {
@@ -32,17 +51,22 @@ footer a {
   margin-bottom: 4rem;
 }
 
+.footer__icon {
+  font-size: 1.5rem;
+  color: var(--color-bg);
+  transition: color 0.4s ease;
+}
+
 .footer__socials a {
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-light);
   padding: 0.8rem;
-  border-radius: 0.7rem;
+  border-radius: 50%;
   display: flex;
-  border: 1px solid transparent;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s ease;
 }
 
 .footer__socials a:hover {
-  background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
+  background: var(--color-primary-variant);
 }

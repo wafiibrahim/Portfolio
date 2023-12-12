@@ -1,10 +1,15 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import { BrowserRouter as Router } from "react-router-dom";
+// index.js
 
-createRoot(document.querySelector("#root")).render(
-  <Router>
-    <App />
-  </Router>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ThemeProvider } from './Theme'; // Adjust the import path if necessary
+
+ReactDOM.render(
+  <React.StrictMode>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
