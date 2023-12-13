@@ -66,3 +66,15 @@
     50% { border-color: var(--color-light); }
   }
   
+
+  @media screen and (max-width: 768px) {
+
+
+
+
+    #typewriter-news{
+
+      font-size: 0.8rem;
+      margin-left: 5px;
+    }
+  }
