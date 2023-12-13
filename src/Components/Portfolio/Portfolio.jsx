@@ -10,6 +10,10 @@ import img4 from '../../Assets/Dashboard 4.png'
 
 import img5 from '../../Assets/Dashboard 5.png'
 
+import img6 from '../../Assets/Dashboard 6.png'
+
+
+
 
 const Portfolio = () => {
   return (
@@ -75,6 +79,18 @@ const Portfolio = () => {
           <div className="portfolio-item-details">
             <h3>Iris Classification Model</h3>
             <a href="https://github.com/wafiibrahim/Iris-Classification" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article className="portfolio-item">
+          <div className="portfolio-item-image">
+            <img src={img6} alt="This Portfolio Website" />
+          </div>
+          <div className="portfolio-item-details">
+            <h3>This Portfolio Website</h3>
+            <a href="https://github.com/wafiibrahim/Portfolio" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               View on GitHub
             </a>
           </div>

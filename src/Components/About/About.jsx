@@ -19,25 +19,27 @@ const About = () => {
 
         <div className="about__content">
           <h5>Get to Know</h5>
+          
           <h2>About Me</h2>
+          <br></br>
 
           <div className="about__cards">
             <div className="about__card">
               <BiAward className="about__icon"></BiAward>
               <h5>Experience</h5>
-              <small>3+ Years Of Experience</small>
+              <small>4+ Years Of Experience in Programming</small>
             </div>
 
             <div className="about__card">
               <IoMdSchool className="about__icon"></IoMdSchool>
               <h5>Education</h5>
-              <small>CS At York University</small>
+              <small>Bachelors of Science in Computer Science from York University</small>
             </div>
 
             <div className="about__card">
               <CgCommunity className="about__icon"></CgCommunity>
               <h5>Community</h5>
-              <small>BSA At York University</small>
+              <small>VP of Marketing and Social Media at Bangladesh Student Association at York University</small>
             </div>
           </div>
 
