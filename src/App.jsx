@@ -18,6 +18,9 @@ import Nav from "./Components/Nav/Nav";
 
 
 import { ThemeContext } from "./../src/Theme";
+import News from "./Components/News/News";
+// import Giphy from "./Components/Giphy/Giphy";
+
 
 
 
@@ -46,13 +49,17 @@ function App() {
       
       
       <Header></Header>
+      {/* <Giphy></Giphy> */}
       <Nav></Nav>
       <About></About>
+      <News></News>
 
       <Experience></Experience>
 
       <Portfolio></Portfolio>
+     
       <Contact></Contact>
+      
 
       <Footer></Footer>
     </div>

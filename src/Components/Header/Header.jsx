@@ -2,7 +2,9 @@ import React from "react";
 import CTA from "./CTA";
 import "./Header.css";
 import ME from "../../Assets/me.png";
-import HeaderSocials from "./HeaderSocials";
+// import HeaderSocials from "./HeaderSocials";
+
+
 
 const Header = () => {
   return (
@@ -11,12 +13,13 @@ const Header = () => {
         <div className="hero__content">
           <div className="hero__text">
             <h5>Hello, I'm</h5>
-            <h1>Wafi Khandaker</h1>
-            <h5 className="text-light">Web Developer With A Passion for Data Science</h5>
+            <h1 id="typewriter">Wafi Khandaker</h1>
+            <h5 className="text-light">Web Developer</h5>
             
 
             <CTA />
-            <HeaderSocials />
+            {/* <HeaderSocials /> */}
+           
           </div>
           <div className="hero__image">
             <img src={ME} alt="Wafi Khandaker" className="me-img" />

@@ -1,0 +1,68 @@
+/* News.css */
+.news-container {
+    overflow: hidden;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-light); /* Adjust background color and opacity */
+    padding: 10px 0; /* Add padding for better visibility */
+    margin-top: 5rem;
+  }
+
+  .news-container h1{
+
+    margin-left: 5vh;
+    color: var(--color-bg);
+  }
+  
+  .news-slider {
+    display: flex;
+    animation: slide 19s linear infinite; /* Use linear easing for a smooth continuous scroll */
+    color: var(--color-bg);
+  }
+  
+  .news-slide {
+    flex: 0 0 auto;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--color-light);
+    text-align: left;
+    transition: transform 1s ease-in-out;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  #typewriter-news {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--color-bg); /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    font-size: 3.2rem;
+    animation: 
+      typing 7s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--color-light); }
+  }
+  

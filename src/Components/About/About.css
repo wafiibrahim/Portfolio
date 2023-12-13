@@ -24,6 +24,7 @@
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
+  z-index: -2;
 }
 
 .about__me:hover {

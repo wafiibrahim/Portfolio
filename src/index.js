@@ -3,6 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import 'regenerator-runtime/runtime';
+
 import { ThemeProvider } from './Theme'; // Adjust the import path if necessary
 
 ReactDOM.render(

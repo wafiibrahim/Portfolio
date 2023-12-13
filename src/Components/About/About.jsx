@@ -7,6 +7,8 @@ import { BiAward } from "react-icons/bi";
 import { IoMdSchool } from "react-icons/io";
 import { CgCommunity } from "react-icons/cg";
 
+
+
 const About = () => {
   return (
     <section id="about" className="about">
@@ -47,6 +49,8 @@ const About = () => {
             I am a pseudo-intellectual. I like talking about things I read
             about briefly from Wikipedia.
           </p>
+
+          
 
           <a href="#contact" className="btn btn-primary">
             Let's Talk
