@@ -46,8 +46,7 @@ const About = () => {
           </div>
 
           <p>
-            I am a pseudo-intellectual. I like talking about things I read
-            about briefly from Wikipedia.
+          🚀 As a Computer Science graduate from Lassonde School of Engineering at York University, I am a passionate web developer with a keen interest in data science and analytics. Proficient in HTML, CSS, JavaScript, React, and Python, I thrive on transforming ideas into innovative digital solutions. Let's build something extraordinary together! 💻✨
           </p>
 
           
