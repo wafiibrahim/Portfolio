@@ -88,7 +88,7 @@ function Contact() {
             placeholder="Enter Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button id="submit" type="submit" className="btn btn-secondary">
             Submit
           </button>
         </form>

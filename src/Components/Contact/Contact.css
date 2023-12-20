@@ -65,16 +65,19 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 1.8rem;
-  border-radius: 0.8rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 4px var(--color-light);
+  font: 0.8em Poppins;
+  
   background: transparent;
-  border: 1px solid var(--color-light);
+  border: 1px solid var(--color-bg);
   color: var(--color-light);
   transition: border-color 0.4s ease;
 }
@@ -88,17 +91,21 @@ textarea {
   resize: none;
 }
 
-button {
-  background-color: var(--color-primary);
-  color: #fff;
+#submit{
+  background-color: var(--color-light);
+  color: var(--color-bg);
   padding: 1.5rem 2.5rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.4s ease;
+  width: 100%;
+  align-items: center;
+  font: 1.1em Poppins;
 }
 
-button:hover {
-  background-color: var(--color-primary-variant);
+#submit:hover {
+  background-color: var(--color-bg);
+  color: var(--color-light);
 }
 
 /*======= Responsive =======*/
@@ -118,7 +125,7 @@ button:hover {
     width: var(--container-width-sm);
   }
 }
-/* ... (unchanged styles) */
+
 
 /*============= Alert ===============*/
 

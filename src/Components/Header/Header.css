@@ -36,6 +36,12 @@
   font-weight: 300;
   color: var(--color-light);
 }
+.hero__text h3{
+
+  font-size: 1rem;
+  font-weight: 200;
+  color:var(--color-light)
+}
 
 .hero__image {
   flex: 1;
@@ -52,7 +58,7 @@
 }
 
 
-.header__socials {
+ .header__socials {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -60,18 +66,16 @@
 }
 
 .header__socials a {
-  color: var(--color-bg);
-  font-size: 2%;
+  color: var(--color-light);
+  font-size: 4rem;
   transition: color 0.3s ease;
 }
 
 .header__socials a:hover {
-  color: var(--color-light);
-}
+  color: var(--color-bg);
+} 
 
-/* CTA Section */
-/* CTA Section */
-/* CTA Section */
+
 .cta {
   display: flex;
   justify-content: space-around; /* Adjust spacing as needed */
@@ -121,6 +125,7 @@
 }
 
 .cta__text a:hover {
+  font-size: 5rem;
   color: var(--color-bg);
 }
 
@@ -138,6 +143,10 @@
   .hero__text {
     max-width: 55%;
   }
+  .hero__text h3{
+
+    width: 20vh;
+  }
 
   .hero__image {
     display: none;
@@ -145,6 +154,26 @@
 
   .scroll__down {
     margin-top: 1rem;
+  }
+
+     
+
+  .cta__button,
+  .cta__button-secondary {
+    font-size: 0.2rem;
+    padding: 0.3rem 0.6rem;
+    
+    
+}
+
+  .cta__text {
+    font-size: 0.1rem;
+    margin-top: 0.1rem;
+    
+  }
+
+  #touch{
+    display: none;
   }
 }
 

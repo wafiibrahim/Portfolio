@@ -31,15 +31,13 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="www.linkedin.com">
+        <a href="https://www.linkedin.com/in/wafiibrahim/">
           <AiFillLinkedin className="footer__icon" />
         </a>
-        <a href="www.github.com">
+        <a href="https://github.com/wafiibrahim">
           <AiFillGithub className="footer__icon" />
         </a>
-        <a href="www.twitter.com">
-          <AiOutlineTwitter className="footer__icon" />
-        </a>
+        
       </div>
     </footer>
   );

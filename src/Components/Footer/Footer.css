@@ -20,6 +20,11 @@ footer a {
   color: var(--color-light);
 }
 
+.footer__logo:hover{
+
+  color: var(--color-bg)
+}
+
 .permalinks {
   list-style: none;
   padding: 0;
